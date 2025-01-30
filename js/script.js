@@ -33,3 +33,21 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
+const contactBtn = document.getElementById("contactBtn");
+const modal = document.getElementById("contactModal");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+contactBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}

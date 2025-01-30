@@ -20,11 +20,11 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#education">Educação</a>
+            <!-- <a href="#contact">Contact</a> -->
 
             <span class="active-nav"></span>
         </nav>
@@ -34,22 +34,33 @@
         <div class="home-content">
             <h1>Olá, sou o <span>Luiz Filipe</span></h1>
             <div class="text-animate">
-                <h3>Desenvolverdor Full Stack</h3>
+                <h3>Desenvolvedor Full Stack</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit neque omnis magnam saepe explicabo exercitationem magni placeat. Itaque praesentium iste porro placeat voluptas architecto ut laboriosam beatae a repudiandae.</p>
-
+            <p>Sou um desenvolvedor full stack com experiência na criação de soluções completas, desde o front-end até o back-end. Tenho habilidades em diversas tecnologias e estou sempre buscando aprender mais para entregar soluções eficientes e de qualidade. Minha paixão por tecnologia me motiva a enfrentar novos desafios e a criar sistemas que atendam às necessidades dos usuários.</p>
+    
             <div class="btn-box">
-                <a href="#" class="btn">Contato</a>
+                <a href="#" class="btn" id="contactBtn">Contato</a>
             </div>
         </div>
-
+    
         <div class="home-sci">
-            <a href="https://www.linkedin.com/in/lufine/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/Lufine" target="_blank"><i class='bx bxl-github' ></i></a>
-            <a href="mailto:lfneuwirth@gmail.com"><i class='bx bxl-gmail' ></i></a>
+            <a href="https://www.linkedin.com/in/lufine/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Lufine" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="mailto:lfneuwirth@gmail.com"><i class='bx bxl-gmail'></i></a>
         </div>
-
+    
         <div class="home-imgHover"></div>
+    
+        <!-- Modal de Contato -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Contato</h2>
+                <p>Email: <i class='bx bxl-gmail'></i><br><a href="mailto:lfneuwirth@gmail.com">lfneuwirth@gmail.com</a></p>
+                <p>LinkedIn: <i class='bx bxl-linkedin'></i><br><a href="https://www.linkedin.com/in/lufine/" target="_blank">linkedin.com/in/lufine</a></p>
+                <p>GitHub: <i class='bx bxl-github'></i><br><a href="https://github.com/Lufine" target="_blank">github.com/Lufine</a></p>
+            </div>
+        </div>
     </section>
 
     <section class="about" id="about">
@@ -62,11 +73,12 @@
 
         <div class="about-content">
             <h3>Desenvolverdor Full Stack</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quae accusamus aliquid! Iste tempora soluta fugiat, nemo odio, autem fuga corporis odit sit, repellat corrupti id cum ipsum? Eius, sint!</p>
+            <p>Sou apaixonado por tecnologia e desenvolvimento de software, com um forte desejo de sempre buscar soluções práticas, inovadoras e eficientes. Me formei em Engenharia de Software pela UniEvangélica, onde desenvolvi uma base sólida em diversas áreas da computação, como programação, bancos de dados, arquitetura de sistemas e inteligência artificial. Durante minha jornada acadêmica, tive a oportunidade de trabalhar em projetos desafiadores, como o NaDespensa, um aplicativo móvel para gestão de alimentos, onde fui responsável pelo desenvolvimento completo do front-end, back-end e banco de dados.<br>
+            <br>Além disso, desenvolvi outros projetos com integrações com APIs e inteligência artificial, sempre buscando aplicar as melhores práticas de desenvolvimento. Tenho uma abordagem focada na resolução de problemas e no aprendizado contínuo, sempre buscando me atualizar sobre novas tecnologias. Tenho uma grande capacidade de trabalhar em equipe e de me comunicar de forma clara e objetiva, o que facilita a colaboração e a troca de ideias. Gosto de enfrentar desafios e encontrar soluções criativas, seja no desenvolvimento de novos sistemas ou na otimização de processos existentes. Estou sempre aberto a novas oportunidades para expandir meu conhecimento e contribuir com soluções tecnológicas que possam fazer a diferença no mundo.</p>
 
-            <div class="btn-box btns">
+            <!-- <div class="btn-box btns">
                 <a href="#" class="btn">Leia mais</a>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -80,27 +92,68 @@
                 <img src="./assets/NaDespensa.png" alt="">
 
                 <h3>NaDespensa</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum ea ducimus corrupti odit repellendus sit consectetur eaque iusto? Consequuntur laudantium commodi praesentium recusandae totam dolores tenetur facilis ipsa quo?</p>
+                <p>O NaDespensa é um aplicativo móvel desenvolvido para otimizar o gerenciamento de alimentos, reduzindo o desperdício e promovendo economia sustentável. O sistema permite que os usuários cadastrem produtos, recebam alertas sobre itens próximos do vencimento e encontrem receitas com ingredientes já disponíveis.</p>
 
                 <div class="btn-box btns">
-                    <div class="btn">Ver projeto</div>
+                    <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7273421865354747905/">
+                        <div class="btn">Ver projeto</div>
+                    </a>
                 </div>
             </div>
 
             <div class="projects-card">
                 <img src="./assets/Portfolio.png" alt="">
                 <h3>Portfolio</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum ea ducimus corrupti odit repellendus sit consectetur eaque iusto? Consequuntur laudantium commodi praesentium recusandae totam dolores tenetur facilis ipsa quo?</p>
+                <p>Meu portfólio foi desenvolvido para apresentar de forma organizada e interativa os projetos que desenvolvi, destacando minhas habilidades em programação e design. O objetivo foi criar uma plataforma intuitiva e visualmente atraente, onde os visitantes podem explorar cada projeto detalhadamente.</p>
 
                 <div class="btn-box btns">
-                    <div class="btn">Ver projeto</div>
+                    <a href="https://lufine.github.io/Portfolio/">
+                        <div class="btn">Ver projeto</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="./assets/CEP.png" alt="">
+                <h3>Buscar CEP</h3>
+                <p>Este sistema foi desenvolvido para facilitar a busca de endereços por meio do CEP e vice-versa, utilizando a API pública do ViaCEP. Com uma interface intuitiva e responsiva, o usuário pode pesquisar rapidamente um endereço a partir do CEP ou encontrar CEPs com base no estado, cidade e rua informados.</p>
+
+                <div class="btn-box btns">
+                    <a target="_blank" href="https://lufine.github.io/Buscar-CEP/">
+                        <div class="btn">Ver projeto</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="./assets/Gerenciar-Times.png" alt="">
+                <h3>Gerenciar Times</h3>
+                <p>Este sistema foi desenvolvido para facilitar a organização de equipes esportivas, permitindo a criação de times equilibrados com base no nível dos jogadores. Além disso, conta com uma tela de placar com cronômetro para auxiliar no acompanhamento das partidas em tempo real.</p>
+
+                <div class="btn-box btns">
+                    <a target="_blank" href="https://lufine.github.io/Gerenciador-de-Times/index.html">
+                        <div class="btn">Ver projeto</div>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="projects-card">
+                <img src="./assets/sonin.jpeg" alt="">
+                <h3>Bot do Sonin</h3>
+                <p>Este sistema consiste em um bot desenvolvido para o Twitter, que automaticamente posta tweets com dicas sobre qualidade de sono a cada 8 horas. Ele utiliza a API do Gemini para gerar as dicas. É um exemplo de automação e integração com APIs para criar uma experiência interativa e educativa para os usuários.</p>
+
+                <div class="btn-box btns">
+                    <a target="_blank" href="https://x.com/Bot_do_Sonin">
+                        <div class="btn">Ver projeto</div>
+                    </a>
                 </div>
             </div>
 
             <div class="projects-card">
                 <img src="./assets/em-breve.png" alt="">
-                <h3>Projeto 3</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum ea ducimus corrupti odit repellendus sit consectetur eaque iusto? Consequuntur laudantium commodi praesentium recusandae totam dolores tenetur facilis ipsa quo?</p>
+                <h3>Temperatura</h3>
+                <p>Este projeto foi desenvolvido como parte de um estudo para aprimorar meus conhecimentos em integração de APIs. Ele permite consultar a temperatura de qualquer local, consumindo uma API externa para fornecer dados atualizados e práticos sobre as condições climáticas.</p>
 
                 <div class="btn-box btns">
                     <div class="btn">Ver projeto</div>
@@ -223,17 +276,12 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
                             <h3>Unievangelica</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
+                            <p>Durante minha formação em Engenharia de Software pela UniEvangélica, estudei diversas disciplinas que me permitiram entender melhor as várias áreas do desenvolvimento de software. Entre elas, destaco Algoritmos e Programação, que me proporcionou uma sólida base para criar soluções eficientes e resolver problemas complexos. Engenharia de Software e Requisitos me ensinou a importância de entender as necessidades do cliente e como planejar e gerenciar o ciclo de vida do software de forma estruturada.<br>
+                            <br>A disciplina de Estruturas de Dados foi essencial para aprimorar minha capacidade de organizar e manipular grandes volumes de dados de maneira eficiente. Em Programação Orientada a Objetos, adquiri uma compreensão aprofundada sobre como criar código modular e reutilizável, tornando o desenvolvimento mais organizado e escalável. Sistemas Gerenciadores de Banco de Dados me ajudou a entender a criação, otimização e manutenção de bancos de dados, essenciais para o gerenciamento de informações em sistemas.<br>                                
+                            <br>Além dessas, também estudei matérias como Qualidade de Software, que abordou práticas e técnicas para garantir a qualidade de sistemas, e Sistemas Distribuídos, que expandiu meu conhecimento sobre a comunicação e integração de sistemas em larga escala. Essas disciplinas, entre outras, me deram uma visão ampla e prática das várias áreas que envolvem o desenvolvimento de software, me preparando para enfrentar os desafios do setor.</p>
                         </div>
                     </div>
 
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
-                            <h3>Unievangelica</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -243,35 +291,38 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
+                            <div class="year"><i class='bx bxs-calendar' ></i>2019 - 2021</div>
                             <h3>Jovem Aprendiz</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
+                            <p>Como Auxiliar de Logística no Grupo Porto Seco Centro-Oeste, atuei no setor de logística da empresa, onde fui responsável por controlar a entrada e saída de caminhões, realizando a pesagem dos veículos para verificar a carga e garantir a precisão das informações. Além disso, fui responsável por realizar o check-list dos aparelhos e equipamentos utilizados pela empresa, inspecionando-os para garantir que estivessem em bom estado de conservação e adequados para o uso.</p>
                         </div>
                     </div>
 
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
+                            <div class="year"><i class='bx bxs-calendar' ></i>2022 - 2023</div>
                             <h3>FTT</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
+                            <p>Como Back-end Developer na Fábrica de Tecnologias Turing (FTT) da UniEVANGÉLICA, atuei em um projeto chamado UniSecurity, um sistema desenvolvido para melhorar a gestão de segurança dentro da universidade. O UniSecurity foi criado para permitir que os seguranças registrassem no sistema qualquer tipo de incidente, como acidentes de carro ou problemas de segurança dentro do campus.
+                            </p>
                         </div>
                     </div>
 
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
+                            <div class="year"><i class='bx bxs-calendar' ></i>2022 - 2023</div>
                             <h3>Estagiário Setor de Operações</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
+                            <p>Durante meu estágio no Setor de Operações da UniEVANGÉLICA - Universidade Evangélica de Goiás, tive a oportunidade de atuar no suporte e atendimento aos usuários do sistema Lyceum, utilizado pela universidade. Além disso, trabalhei na organização e digitalização de documentos, garantindo que ficassem acessíveis em ambiente virtual, facilitando a gestão e consulta de informações.
+                            </p>
                         </div>
                     </div>
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i>2021 - 2024</div>
+                            <div class="year"><i class='bx bxs-calendar' ></i>2023 - o momento</div>
                             <h3>ICI</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae tenetur perferendis earum et vero. Nulla suscipit, commodi soluta aperiam, rerum aliquam sequi voluptas recusandae fuga consectetur dolore qui dignissimos.</p>
+                            <p>Atualmente, sou responsável por fornecer suporte técnico aos usuários, ajudando a resolver dúvidas e problemas relacionados ao sistema. Também crio e atualizo FAQs e manuais para facilitar a autoajuda. Realizo treinamentos para novos usuários e explico as atualizações do sistema, garantindo que todos saibam utilizar as novas funcionalidades. Participo de reuniões com usuários para entender suas necessidades e registro sugestões e feedbacks para melhorias. Além disso, crio relatórios sobre o uso do sistema e documentações técnicas para apoiar a manutenção e o desenvolvimento do sistema. Monitoro o desempenho do sistema, identificando problemas e propondo melhorias. Também gerencio incidentes e problemas técnicos, utilizando ferramentas para rastrear e resolver as solicitações dentro dos prazos. Trabalho em colaboração com a equipe de desenvolvimento, fornecendo feedback e sugerindo melhorias. Por fim, ofereço suporte técnico geral e auxilio em outras tarefas relacionadas à área de tecnologia da informação conforme necessário.
+                            </p>
                         </div>
                     </div>
                 </div>
